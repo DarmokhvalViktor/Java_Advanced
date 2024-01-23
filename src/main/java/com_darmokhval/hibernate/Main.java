@@ -42,6 +42,9 @@ public class Main {
                 }
                 List<Word> wordsFromDatabase = session.createNativeQuery("select * from word", Word.class).list();
                 wordsFromDatabase.forEach(System.out::println);
+                wordsFromDatabase.forEach(word -> {
+                    System.out.println(word.getValue());
+                });
 
                 String[] carModels = {"Toyota", "Honda", "Ford", "Chevrolet", "Volkswagen", "Nissan", "BMW", "Audi", "Volvo"};
                 Integer[] carPower = {100, 125, 150, 175, 200, 250, 300, 350, 400};
