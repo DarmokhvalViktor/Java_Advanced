@@ -20,9 +20,5 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <!-- Mention annotated class -->
-        <mapping class="com_darmokhval.entity.Word"/>
-        <mapping class="com_darmokhval.entity.Car"/>
-
     </session-factory>
 </hibernate-configuration>
